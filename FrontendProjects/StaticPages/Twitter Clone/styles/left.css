@@ -1,0 +1,59 @@
+.left-subgrid {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 700px;
+    z-index: 300;
+    /* padding-left: 2%; */
+}
+.twitter-logo {
+    height: 50px;
+    padding: 10px;
+}
+.left-icon {
+    height: 20px;
+    padding: 10px;
+}
+.left-logo-holder {
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.left-icon-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    padding-left: 3%;
+}
+.left-icon-holder:hover {
+    background-color: rgba(202, 196, 196, 0.3);
+}
+.left-button-holder {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 5%;
+    padding-left: 8%;
+}
+.tweet-button {
+    background-color: rgb(45,145,245);
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.tweet-button:hover {
+    background-color: rgb(0, 128, 255);
+    box-shadow: 0px 0px 25px 2px rgba(45,145,225,0.8);
+}

@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    align-items: center;
+    gap: 1.5%;
+}
+.logo {
+    width: 90%;
+    margin-left: 12%;
+}
+.header-text-links {
+    cursor: pointer;
+    font-size: 85%;
+    transition: text-decoration 2s;
+
+}
+.header-text-links:hover{
+    text-decoration: underline;
+}
+.header-far-right {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+}
+.header-far-right:hover {
+    text-decoration: underline;
+}
+.menu-icon {
+    height: 20px;
+    margin-left: 80%;
+    margin-top: 15%;
+}

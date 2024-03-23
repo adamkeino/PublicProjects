@@ -1,0 +1,215 @@
+.center-subgrid {
+    background-color: skyblue;
+    margin-left: 30.5%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    padding: 0;
+}
+.for-you {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 23%;
+    right: 25%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 200;
+    gap: 0;
+}
+.foryou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    cursor: pointer;
+}
+.foryou:hover .foryou-indicator{
+    background-color: rgb(45,145,245);
+    height: 4px;
+    width: 100px;
+    border: none;
+    border-radius: 2px;
+}
+.foryou:active .foryou-indicator {
+    background-color: rgb(45,145,245);
+    height: 4px;
+    width: 100px;
+    border: none;
+    border-radius: 2px;
+}
+.following {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    cursor: pointer;
+}
+.foryou:hover {
+    background-color: rgba(134, 131, 131, 0.4);
+}
+.following:hover {
+    background-color: rgba(134, 131, 131, 0.4);
+}
+.gearicon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+}
+.gear-icon-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    
+}
+.gear-icon {
+    height: 25px;
+}
+.gear-icon-holder:hover {
+    background-color: grey;
+}
+
+.whatshappening {
+    background-color: rgba(0,0,0,0.99);
+    position: relative;
+    width: 100%;
+    height: 130px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.tweet-input {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    align-items: center;
+    padding-left: 2%;
+    padding-bottom: 3%;
+}
+.tweet-input-text {
+    width: 500px;
+}
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.profile-icon-container {
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 2px;
+}
+.input-box {
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+.input-box::placeholder {
+    color: rgb(172, 166, 166);
+}
+.whatshappening-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.image-icon-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap: 8%;
+    padding-left: 14%;
+}
+.image-upload {
+    height: 18px;
+    /* padding: 4%; */
+    cursor: pointer;
+}
+
+.tweet-button-holder {
+    display: flex;
+    align-items: center;
+}
+.tweet-button2 {
+    background-color: rgb(45,145,245);
+    color: white;
+    width: 80px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.tweet-button2:hover {
+    background-color: rgb(0, 128, 255);
+    box-shadow: 0px 0px 15px 2px rgba(45,145,225,0.8);
+}
+/* Content Containers */
+/* Text Content Container Styles */
+.text-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-style: solid;
+    width: 100%;
+    height: 5%;
+    border-width: 0.2px;
+    padding: 0;
+    border-color: rgb(196, 195, 195) black rgb(195, 193, 193);
+    background-color: black;
+}
+.content-profile-icon-container {
+    width: 8%;
+    height: 2%;
+    padding: 1%;
+}
+.content-text-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+}
+.text-headliner {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    padding: 1%;
+    padding-left: 0;
+    
+}
+.tick-icon {
+    height: 60%;
+    margin-top: 35%;
+}
+.poster-name {
+    font-weight: bold;
+    font-size: 120%;
+    padding-right: 0.5%;
+}
+.poster-at {
+    padding-left: 0.5%;
+}
+.text-main-body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}

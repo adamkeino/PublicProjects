@@ -1,0 +1,24 @@
+.image-content-container {
+    display: flex;
+    flex-direction: column;
+}
+.conten-header-container {
+    display: flex;
+    flex-direction: row;
+}
+.content-text-container {
+    display: flex;
+    flex-direction: column;
+}
+.text-headliner {
+    display: flex;
+    flex-direction: row;
+}
+.image-body-container {
+    display: flex;
+    flex-direction: column;
+}
+.tweet-metrics-container {
+    display: flex;
+    flex-direction: row;
+}

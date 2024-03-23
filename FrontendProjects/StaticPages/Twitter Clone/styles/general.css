@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 2000px;
+    font-family: 'Roboto', sans-serif;
+}
+
