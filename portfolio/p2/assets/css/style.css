@@ -168,3 +168,10 @@ img {
     height: 40px;
     display: inline-flex;
 }
+
+.modal-title {
+    color: var(--color-base2);
+}
+.modal-text {
+    color: var(--color-base);
+}
