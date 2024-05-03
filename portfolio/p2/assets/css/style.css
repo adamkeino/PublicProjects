@@ -169,9 +169,19 @@ img {
     display: inline-flex;
 }
 
-.modal-title {
+/* .modal-title {
     color: var(--color-base2);
 }
 .modal-text {
     color: var(--color-base);
+} */
+
+.modal-content {
+    background-color: var(--color-base);
+}
+
+.modal-header .close {
+    border: none;
+    color: #deff58;
+    background-color: #022a30;
 }
