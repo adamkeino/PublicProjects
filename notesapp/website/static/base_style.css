@@ -1,0 +1,7 @@
+.mess-alert {
+    position: relative;
+    top: 100px;
+    left: 18%;
+    width: 65%;
+    z-index: 1;
+}

@@ -21,8 +21,10 @@ def signup():
 
         if len(email) < 4:
             flash('Email too short', category="error")
-        elif len(firstName) < 3 or len(lastName) < 3:
-            flash('Please enter a valid name', category="error")
+        elif len(firstName) < 3:
+            flash('Please enter a valid first name', category="error")
+        elif len(lastName) < 3:
+            flash('Please enter a valid last name', category="error")
         elif password1 != password2:
             flash('Passwords do not match', category="error")
         else:

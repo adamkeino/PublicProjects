@@ -10,6 +10,7 @@
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" 
     integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" 
     crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../static/base_style.css"> -->
     <title>{% block title %}Home{% endblock %}</title>
 </head>
 <body>
@@ -26,6 +27,27 @@
             </div>
         </div>
     </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    {% if category == "error" %}
+        <div class="alert alert-danger alert-dismissable fade show mess-alert" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% else %}
+        <div class="alert alert-success alert-dismissable fade show mess-alert" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endif %}
+    {% endfor %}
+    {% endif%}
+    {% endwith %}
     <div class="container">
         {% block content %}
         {% endblock%}
