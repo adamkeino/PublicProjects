@@ -1,4 +1,8 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, redirect, request, flash, url_for
+from .models import User
+from werkzeug.security import generate_password_hash, check_password_hash
+# hashing function to obfuscate password and increase app 
+from . import db
 
 auth = Blueprint('auth', __name__)
 
@@ -28,7 +32,13 @@ def signup():
         elif password1 != password2:
             flash('Passwords do not match', category="error")
         else:
+            new_user = User(email=email, first_name=firstName, 
+                            last_name=lastName, 
+                            password=generate_password_hash(password1, method='pbkdf2:sha256'))
+            db.session.add('new_user')
+            db.session.commit()
             flash('Account created successfully', category="success")
+            return redirect(url_for('views.home'))
 
     return render_template("signup.html")
 
