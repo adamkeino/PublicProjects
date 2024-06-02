@@ -1,0 +1,14 @@
+{% extends index.html %}
+{% block content %}
+{% if car_list %}
+    <ul>
+    {% for car in car_list %}
+        <li>{{ car.car_name }}</li>
+        <li>{{ car.car_type }}</li>
+        <li>{{ car.car_reg }}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No car records available</p>
+    {% endif %}
+{% endblock %}

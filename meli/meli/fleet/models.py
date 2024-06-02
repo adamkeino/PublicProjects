@@ -1,21 +1,21 @@
 from django.db import models
 
-class Vehicle(models.Models):
-    vehicle_type = models.CharField(max_length=200)
-    vehicle_name = models.CharField(max_length=200)
-    vehicle_registration = models.CharField(max_length=200)
+class Vehicle(models.Model):
+    car_type = models.CharField(max_length=200)
+    car_name = models.CharField(max_length=200)
+    car_reg = models.CharField(max_length=200)
     """
         vehicle_location = https://django-location-field.readthedocs.io/en/latest/index.html
         vehicle_speed = 
 
     """
-    car = f"Model: {vehicle_type} \n Name: {vehicle_name} \n Reg. No: {vehicle_registration}"
     def __str__(self):
-        return self.car
+        car = "Model: {} \n Name: {} \n Reg. No: {}".format(self.car_type, self.car_name, self.car_reg)
+        return car
 
-class Driver(models.Models):
+class Driver(models.Model):
     driver_name = models.CharField(max_length=100)
-    driver_id = models.IntegerField(length=50)
+    driver_id = models.IntegerField()
 
 
 

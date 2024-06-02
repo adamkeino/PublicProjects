@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meli Fleet</title>
+</head>
+<body>
+    <h2>Your Fleet</h2>
+    <p>Select Vehicle to see details</p>
+    {% block content %}
+    {% if car_list %}
+    
+    {% for car in car_list %}
+    <ul>
+        <li><b>Car Name: </b>{{ car.car_name }}</li>
+        <li><b>Car Type: </b>{{ car.car_type }}</li>
+        <li><strong>Car Reg: </strong>{{ car.car_reg }}</li>
+    </ul>
+    {% endfor %}
+    
+    {% else %}
+        <p>No fleet records available</p>
+    {% endif %}
+    {% endblock %}
+</body>
+</html>
