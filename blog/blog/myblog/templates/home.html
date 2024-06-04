@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h2>Hello! Welcome to Adam's blog!</h2>
     <ul>
     {% for post in object_list %}
@@ -14,8 +9,6 @@
                 <b>{{ post.title }}</b>
             </a> - {{ post.author.first_name }} {{ post.author.last_name }}
         </li>
-        <br>
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Articles</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>{{ post.title }}</h1>
     <h4>By: {{ post.author.first_name }} {{post.author.last_name }}</h4> 
     <hr>
@@ -18,7 +13,5 @@
     <small>Blog Article Number: <b>{{ post.art_num }}</b>      Publish Date: {{ post.pub_date }}</small>
     <br>
     <br>
-    <a href="{% url 'home' %}">Back</a>
-
-</body>
-</html>
+    <a class="btn btn-outline-secondary" href="{% url 'home' %}">Back</a>
+{% endblock %}
