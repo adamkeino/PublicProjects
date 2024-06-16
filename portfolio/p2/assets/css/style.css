@@ -178,6 +178,7 @@ img {
 
 .modal-content {
     background-color: var(--color-base);
+    height: 550px; overflow-y: scroll;
 }
 
 .modal-header .close {
